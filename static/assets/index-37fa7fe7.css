@@ -18,8 +18,6 @@
 ._stopGeneratingContainer_e63yc_200{box-sizing:border-box;display:flex;flex-direction:row;justify-content:center;align-items:center;padding:5px 16px;gap:4px;position:absolute;width:161px;height:32px;left:calc(50% - 54.7px);bottom:116px;border:1px solid #d1d1d1;border-radius:16px}
 ._stopGeneratingIcon_e63yc_217{width:14px;height:14px;color:#424242}
 ._stopGeneratingText_e63yc_223{width:103px;height:20px;font-style:normal;font-weight:600;font-size:14px;line-height:20px;display:flex;align-items:center;color:#242424;flex:none;order:0;flex-grow:0}
-/* Commented out citation pannel styles */
-/*
 ._citationPanel_e63yc_238{display:flex;flex-direction:column;align-items:flex-start;padding:16px;gap:8px;background:#ffffff;box-shadow:0 2px 4px #00000024,0 0 2px #0000001f;border-radius:8px;flex:auto;order:0;align-self:stretch;flex-grow:.3;max-width:30%;overflow-y:scroll;max-height:calc(100vh - 100px)}
 ._citationPanelHeaderContainer_e63yc_258{width:100%}
 ._citationPanelHeader_e63yc_258{font-style:normal;font-weight:600;font-size:18px;line-height:24px;color:#000;flex:none;order:0;flex-grow:0}
@@ -28,7 +26,6 @@
 ._citationPanelTitle_e63yc_284{font-style:normal;font-weight:600;font-size:16px;line-height:22px;color:#323130;margin-top:12px;margin-bottom:12px}
 ._citationPanelTitle_e63yc_284:hover{text-decoration:underline;cursor:pointer}
 ._citationPanelContent_e63yc_299{font-style:normal;font-weight:400;font-size:14px;line-height:20px;color:#000;flex:none;order:1;align-self:stretch;flex-grow:0}a{padding-left:5px;padding-right:5px}
-*/
 ._viewSourceButton_e63yc_316{font-style:normal;font-weight:600;font-size:12px;line-height:16px;color:#115ea3;flex-direction:row;align-items:center;padding:4px 6px;gap:4px;border:1px solid #d1d1d1;border-radius:4px}
 ._viewSourceButton_e63yc_316:hover{text-decoration:underline;cursor:pointer}@media (max-width: 480px)
 {._chatInput_e63yc_139{width:90%;max-width:90%}
@@ -36,20 +33,18 @@
 ._clearChatBroom_e63yc_152,
 ._clearChatBroomNoCosmos_e63yc_168{left:0px}
 ._chatEmptyStateTitle_e63yc_40{line-height:36px}
-/* ._citationPanel_e63yc_238{max-width:100%}} */
+._citationPanel_e63yc_238{max-width:100%}}
 ._answerContainer_1qm4u_1{display:flex;flex-direction:column;align-items:flex-start;padding:8.1285px;gap:5.42px;background:#ffffff;box-shadow:0 1px 2px #00000024,0 0 2px #0000001f;border-radius:5.419px}
 ._answerText_1qm4u_14{font-style:normal;font-weight:400;font-size:14px;line-height:20px;color:#323130;flex:none;order:1;align-self:stretch;flex-grow:0;margin:11px;white-space:normal;word-wrap:break-word;max-width:800px;overflow-x:auto}
 ._answerHeader_1qm4u_31{position:relative}
 ._answerFooter_1qm4u_35{display:flex;flex-flow:row nowrap;width:100%;height:auto;box-sizing:border-box;justify-content:space-between}
 ._answerDisclaimerContainer_1qm4u_44{justify-content:center;display:flex}
 ._answerDisclaimer_1qm4u_44{font-style:normal;font-weight:400;font-size:12px;line-height:16px;display:flex;align-items:center;text-align:center;color:#707070;flex:none;order:1;flex-grow:0}
-/*
- ._citationWrapper_1qm4u_64{margin-top:8;display:flex;flex-flow:wrap column;max-height:150px;gap:4px}
+._citationWrapper_1qm4u_64{margin-top:8;display:flex;flex-flow:wrap column;max-height:150px;gap:4px}
 ._citationContainer_1qm4u_72{margin-left:10px;font-style:normal;font-weight:600;font-size:12px;line-height:16px;color:#115ea3;display:flex;flex-direction:row;align-items:center;padding:4px 6px;gap:4px;border:1px solid #d1d1d1;border-radius:4px}
 ._citationContainer_1qm4u_72:hover{text-decoration:underline;cursor:pointer}
 ._citation_1qm4u_64{box-sizing:border-box;display:inline-flex;flex-direction:column;justify-content:center;align-items:center;padding:0;width:14px;height:14px;border:1px solid #e0e0e0;border-radius:4px;flex:none;flex-grow:0;z-index:2;font-style:normal;font-weight:600;font-size:10px;line-height:14px;text-align:center;color:#424242;cursor:pointer}
 ._citation_1qm4u_64:hover{text-decoration:underline;cursor:pointer}
- */
 ._accordionIcon_1qm4u_122{display:inline-flex;flex-direction:row;justify-content:center;align-items:center;padding:0;margin-top:4px;color:#616161;font-size:10px}
 ._accordionIcon_1qm4u_122:hover{cursor:pointer}
 ._accordionTitle_1qm4u_137{margin-right:5px;margin-left:10px;font-style:normal;font-weight:400;font-size:12px;line-height:16px;display:flex;align-items:center;color:#616161}
@@ -57,10 +52,8 @@
 ._clickableSup_1qm4u_153{box-sizing:border-box;display:inline-flex;flex-direction:column;justify-content:center;align-items:center;padding:0;width:14px;height:14px;border:1px solid #e0e0e0;border-radius:4px;flex:none;order:2;flex-grow:0;z-index:2;font-style:normal;font-weight:600;font-size:10px;line-height:14px;text-align:center;color:#424242;cursor:pointer}
 ._clickableSup_1qm4u_153:hover{text-decoration:underline;cursor:pointer}sup{font-size:10px;line-height:10px}@media (max-width: 480px)
 {._answerFooter_1qm4u_35{flex-direction:column-reverse}
-/*
- ._citationWrapper_1qm4u_64{max-height:max-content}
+._citationWrapper_1qm4u_64{max-height:max-content}
 ._citationContainer_1qm4u_72{margin-left:0}
- */
 ._answerDisclaimer_1qm4u_44{margin-bottom:5px}}
 ._questionInputContainer_185lc_1{height:120px;position:absolute;left:6.5%;right:0%;top:0%;bottom:0%;background:#ffffff;box-shadow:0 8px 16px #00000024,0 0 2px #0000001f;border-radius:8px}
 ._questionInputTextArea_185lc_15{width:100%;line-height:40px;margin:10px 12px}
@@ -106,5 +99,4 @@
 ._copyButtonContainer_1e0ns_71:hover{cursor:pointer;background:#d1d1d1}
 ._copyButton_1e0ns_71{color:#424242}
 ._copyButtonText_1e0ns_93{font-style:normal;font-weight:600;font-size:14px;line-height:20px;display:flex;align-items:center;color:#242424}@media (max-width: 480px)
-{._headerTitleContainer_1e0ns_17{margin-left:4px}
-._headerIcon_1e0ns_34{margin-left:26px}}*{box-sizing:border-box}html,body{height:100%;margin:0;padding:0}html{background:#f2f2f2;font-family:Segoe UI,"Segoe UI Web (West European)",Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}#root{height:100%}
+{._headerTitleContainer_1e0ns_17{margin-left:4px}._headerIcon_1e0ns_34{margin-left:26px}}*{box-sizing:border-box}html,body{height:100%;margin:0;padding:0}html{background:#f2f2f2;font-family:Segoe UI,"Segoe UI Web (West European)",Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}#root{height:100%}
