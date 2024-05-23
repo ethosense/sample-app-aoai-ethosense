@@ -17,7 +17,7 @@ import {
   ChatMessage,
   ConversationRequest,
   conversationApi,
-  // Citation,
+  Citation,
   ToolMessageContent,
   ChatResponse,
   getUserInfo,
@@ -48,8 +48,8 @@ const Chat = () => {
   const chatMessageStreamEnd = useRef<HTMLDivElement | null>(null)
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [showLoadingMessage, setShowLoadingMessage] = useState<boolean>(false)
-  // const [activeCitation, setActiveCitation] = useState<Citation>()
-  // const [isCitationPanelOpen, setIsCitationPanelOpen] = useState<boolean>(false)
+  const [activeCitation, setActiveCitation] = useState<Citation>()
+  const [isCitationPanelOpen, setIsCitationPanelOpen] = useState<boolean>(false)
   const abortFuncs = useRef([] as AbortController[])
   const [showAuthMessage, setShowAuthMessage] = useState<boolean | undefined>()
   const [messages, setMessages] = useState<ChatMessage[]>([])
@@ -515,8 +515,8 @@ const Chat = () => {
           payload: appStateContext?.state.currentChat.id
         })
        appStateContext?.dispatch({ type: 'UPDATE_CHAT_HISTORY', payload: appStateContext?.state.currentChat })
-        // setActiveCitation(undefined)
-        // setIsCitationPanelOpen(false)
+        setActiveCitation(undefined)
+        setIsCitationPanelOpen(false)
         setMessages([])
       }
     }
@@ -581,8 +581,8 @@ const Chat = () => {
   const newChat = () => {
     setProcessMessages(messageStatus.Processing)
     setMessages([])
-    // setIsCitationPanelOpen(false)
-    // setActiveCitation(undefined)
+    setIsCitationPanelOpen(false)
+    setActiveCitation(undefined)
     appStateContext?.dispatch({ type: 'UPDATE_CURRENT_CHAT', payload: null })
     setProcessMessages(messageStatus.Done)
   }
@@ -665,8 +665,8 @@ const Chat = () => {
   }, [showLoadingMessage, processMessages])
 
   const onShowCitation = (citation: Citation) => {
-    //setActiveCitation(citation)
-    //setIsCitationPanelOpen(true)
+    setActiveCitation(citation)
+    setIsCitationPanelOpen(true)
   }
   
 
@@ -679,7 +679,7 @@ const Chat = () => {
   const parseCitationFromMessage = (message: ChatMessage) => {
     if (message?.role && message?.role === 'tool') {
       try {
-        // const toolMessage = JSON.parse(message.content) as ToolMessageContent
+        const toolMessage = JSON.parse(message.content) as ToolMessageContent
         return toolMessage.citations
       } catch {
         return []
@@ -745,7 +745,7 @@ const Chat = () => {
                       </div>
                     ) : answer.role === 'assistant' ? (
                       <div className={styles.chatMessageGpt}>
-                        {/*<Answer
+                        {<Answer
                           answer={{
                             answer: answer.content,
                             citations: parseCitationFromMessage(messages[index - 1]),
@@ -753,7 +753,7 @@ const Chat = () => {
                             feedback: answer.feedback
                           }}
                           onCitationClicked={c => onShowCitation(c)}
-                        /> */}
+                        /> }
                       </div>
                     ) : answer.role === ERROR ? (
                       <div className={styles.chatMessageError}>
@@ -769,13 +769,13 @@ const Chat = () => {
                 {showLoadingMessage && (
                   <>
                     <div className={styles.chatMessageGpt}>
-                      {/* <Answer
+                      { <Answer
                         answer={{
                           answer: 'Generating answer...',
                           citations: []
                         }}
                         onCitationClicked={() => null}
-                      /> */}
+                      /> }
                     </div>
                   </>
                 )}
