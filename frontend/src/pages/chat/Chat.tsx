@@ -665,9 +665,10 @@ const Chat = () => {
   }, [showLoadingMessage, processMessages])
 
   const onShowCitation = (citation: Citation) => {
-    setActiveCitation(citation)
+    /* setActiveCitation(citation)
     setIsCitationPanelOpen(true)
   }
+  */
 
   const onViewSource = (citation: Citation) => {
     if (citation.url && !citation.url.includes('blob.core')) {
